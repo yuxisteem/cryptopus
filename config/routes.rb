@@ -6,6 +6,9 @@
 #  https://github.com/puzzle/cryptopus.
 
 Cryptopus::Application.routes.draw do
+
+  apipie
+
   scope "(:locale)", locale: /en|de|fr/ do
     resources :recryptrequests
     resources :teams do

@@ -1,0 +1,1204 @@
+{
+  "accounts#edit": [
+    {
+      "verb": "GET",
+      "path": "/en/teams/235930340/groups/683612621/accounts/303742481/edit",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "accounts#index": [
+    {
+      "verb": "GET",
+      "path": "/en/teams/387535712/groups/834029689/accounts",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/teams/235930340/groups/683612621/accounts",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "accounts#update": [
+    {
+      "verb": "PATCH",
+      "path": "/en/teams/235930340/groups/683612621/accounts/303742481",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "account": {
+          "group_id": "12"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams/235930340/groups/683612621/accounts\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "groups#destroy": [
+    {
+      "verb": "DELETE",
+      "path": "/en/teams/235930340/groups/683612621",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams/235930340/groups\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "groups#edit": [
+    {
+      "verb": "GET",
+      "path": "/en/teams/235930340/groups/683612621/edit",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "groups#index": [
+    {
+      "verb": "GET",
+      "path": "/en/teams/387535712/groups",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/teams/235930340/groups",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "groups#update": [
+    {
+      "verb": "PUT",
+      "path": "/en/teams/235930340/groups/683612621",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "group": {
+          "name": "new_name",
+          "description": "new_description"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams/235930340/groups\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "items#create": [
+    {
+      "verb": "POST",
+      "path": "/en/teams/235930340/groups/683612621/accounts/303742481/items",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "item": {
+          "filename": "Testfile",
+          "content_typ": "application/zip",
+          "file": {
+            "content_type": "text/plain",
+            "original_filename": " ",
+            "tempfile": [
+
+            ]
+          },
+          "description": "test"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams/235930340/groups/683612621/accounts/303742481\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/teams/235930340/groups/683612621/accounts/303742481/items",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "item": {
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams/235930340/groups/683612621/accounts/303742481\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "logins#authenticate": [
+    {
+      "verb": "POST",
+      "path": "/en/login/authenticate",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "wrong_password",
+        "username": "unknown_username"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/login/authenticate",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "wrong_password",
+        "username": "bob"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/login/authenticate",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "password",
+        "username": "bob"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/recryptrequests\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "logins#login": [
+    {
+      "verb": "GET",
+      "path": "/en/login/login",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/wizard\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "logins#logout": [
+    {
+      "verb": "GET",
+      "path": "/en/login/logout",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "logins#show_update_password": [
+    {
+      "verb": "GET",
+      "path": "/en/login/show_update_password",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/search\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "logins#update_password": [
+    {
+      "verb": "POST",
+      "path": "/en/login/update_password",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "old_password": "password",
+        "new_password1": "test",
+        "new_password2": "test"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/search\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/login/update_password",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "old_password": "password",
+        "new_password1": "test",
+        "new_password2": "test"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/login/update_password",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "old_password": "password",
+        "new_password1": "test",
+        "new_password2": "wrong_password"
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/login/update_password",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "old_password": "wrong_password",
+        "new_password1": "test",
+        "new_password2": "test"
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "maintenance_tasks#execute": [
+    {
+      "verb": "POST",
+      "path": "/en/admin/maintenance_tasks/0/execute",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "task_params": {
+          "root_password": "password"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/maintenance_tasks\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/maintenance_tasks/0/execute",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "task_params": {
+          "root_password": "password"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/maintenance_tasks\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "maintenance_tasks#index": [
+    {
+      "verb": "GET",
+      "path": "/en/admin/maintenance_tasks",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "maintenance_tasks#prepare": [
+    {
+      "verb": "GET",
+      "path": "/en/admin/maintenance_tasks/0/prepare",
+      "versions": [
+
+      ],
+      "query": "task_params%5Blabel%5D=root_password&task_params%5Btype%5D=password",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "members#candidates": [
+    {
+      "verb": "GET",
+      "path": "/api/teams/387535713/members/candidates",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en",
+      "request_data": null,
+      "response_data": {
+        "users": [
+          {
+            "id": 663665735,
+            "label": "Alice test",
+            "admin": false
+          },
+          {
+            "id": 902541635,
+            "label": "Bob test",
+            "admin": false
+          }
+        ]
+      },
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "members#create": [
+    {
+      "verb": "POST",
+      "path": "/api/teams/235930340/members",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": {
+        "user_id": "902541636"
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "members#destroy": [
+    {
+      "verb": "DELETE",
+      "path": "/api/teams/235930340/members/902541635",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "members#index": [
+    {
+      "verb": "GET",
+      "path": "/api/teams/235930340/members",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en",
+      "request_data": null,
+      "response_data": {
+        "teammembers": [
+          {
+            "user_id": 135138680,
+            "label": "Admin test",
+            "deletable": false,
+            "admin": true
+          },
+          {
+            "user_id": 663665735,
+            "label": "Alice test",
+            "deletable": true,
+            "admin": false
+          },
+          {
+            "user_id": 385153371,
+            "label": "Root test",
+            "deletable": false,
+            "admin": true
+          }
+        ]
+      },
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "recryptrequests#index": [
+    {
+      "verb": "GET",
+      "path": "/en/admin/recryptrequests",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "recryptrequests#resetpassword": [
+    {
+      "verb": "POST",
+      "path": "/en/admin/recryptrequests/resetpassword",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "new_password": "test",
+        "user_id": "902541635"
+      },
+      "response_data": "<html><body>You are being <a href=\"where_i_came_from\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/recryptrequests/resetpassword",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "user_id": "902541635"
+      },
+      "response_data": "<html><body>You are being <a href=\"where_i_came_from\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/recryptrequests/resetpassword",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "new_password": "test",
+        "user_id": "902541635"
+      },
+      "response_data": "<html><body>You are being <a href=\"where_i_came_from\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/recryptrequests/resetpassword",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "new_password": "test",
+        "user_id": "663665735"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/recryptrequests/resetpassword",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "new_password": "test",
+        "user_id": "902541635"
+      },
+      "response_data": "<html><body>You are being <a href=\"where_i_came_from\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "search#account": [
+    {
+      "verb": "GET",
+      "path": "/en/search/account",
+      "versions": [
+
+      ],
+      "query": "search_string=acc",
+      "request_data": null,
+      "response_data": {
+        "accounts": [
+          {
+            "id": 303742481,
+            "accountname": "account1",
+            "group_id": 683612621,
+            "group": "group1",
+            "team": "team1",
+            "team_id": 235930340,
+            "cleartext_password": "password",
+            "cleartext_username": "test"
+          }
+        ]
+      },
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "settings#update_all": [
+    {
+      "verb": "POST",
+      "path": "/en/admin/settings/update_all",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "setting": {
+          "ldap_basename": "test_basename",
+          "ldap_portnumber": "1234",
+          "ldap_enable": "f"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/settings/index\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#create": [
+    {
+      "verb": "POST",
+      "path": "/en/teams",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "team": {
+          "name": "foo",
+          "private": false,
+          "description": "foo foo"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#destroy": [
+    {
+      "verb": "DELETE",
+      "path": "/en/teams/235930340",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/en/teams/235930340",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/en/teams/235930340",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/en/teams/235930340",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#destroy_last_teammember_teams": [
+    {
+      "verb": "DELETE",
+      "path": "/api/teams/last_teammember_teams",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en&user_id=902541636",
+      "request_data": null,
+      "response_data": {
+        "messages": {
+          "errors": [
+            "Access denied"
+          ],
+          "info": [
+
+          ]
+        },
+        "data": null
+      },
+      "code": "500",
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/api/teams/last_teammember_teams",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en&user_id=902541636",
+      "request_data": null,
+      "response_data": {
+        "messages": {
+          "errors": [
+
+          ],
+          "info": [
+
+          ]
+        },
+        "data": ""
+      },
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#edit": [
+    {
+      "verb": "GET",
+      "path": "/en/teams/235930340/edit",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#index": [
+    {
+      "verb": "GET",
+      "path": "/en/teams",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/teams",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/teams",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/logout\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/teams",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/logout\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#last_teammember_teams": [
+    {
+      "verb": "GET",
+      "path": "/api/teams/last_teammember_teams",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en&user_id=902541636",
+      "request_data": null,
+      "response_data": {
+        "messages": {
+          "errors": [
+            "Access denied"
+          ],
+          "info": [
+
+          ]
+        },
+        "data": null
+      },
+      "code": "500",
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/api/teams/last_teammember_teams",
+      "versions": [
+        "1.0"
+      ],
+      "query": "locale=en&user_id=902541636",
+      "request_data": null,
+      "response_data": {
+        "messages": {
+          "errors": [
+
+          ],
+          "info": [
+
+          ]
+        },
+        "data": [
+          {
+            "id": 387535713,
+            "name": "Viva",
+            "description": "Use the auxiliary JSON hard drive, then you can connect the mobile panel!",
+            "created_at": "2016-06-24T09:31:26.633Z",
+            "updated_at": "2016-06-24T09:31:26.633Z",
+            "visible": true,
+            "private": true
+          }
+        ]
+      },
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "teams#update": [
+    {
+      "verb": "PUT",
+      "path": "/en/teams/387535713",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "team": {
+          "private": false
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "PUT",
+      "path": "/en/teams/235930340",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "team": {
+          "private": true
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "users#destroy": [
+    {
+      "verb": "DELETE",
+      "path": "/en/admin/users/663665735",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/en/admin/users/663665735",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "DELETE",
+      "path": "/en/admin/users/902541635",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "users#toggle_admin": [
+    {
+      "verb": "POST",
+      "path": "/en/admin/users/902541635/toggle_admin",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/users/902541635/toggle_admin",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/users/902541635/toggle_admin",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "users#unlock": [
+    {
+      "verb": "GET",
+      "path": "/en/admin/users/902541635/unlock",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/teams\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/admin/users/902541635/unlock",
+      "versions": [
+
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "users#update": [
+    {
+      "verb": "POST",
+      "path": "/en/admin/users/663665735",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "user": {
+          "username": "new_username",
+          "givenname": "new_givenname"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/admin/users/902541635",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "user": {
+          "username": "new_username"
+        }
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "wizard#apply": [
+    {
+      "verb": "POST",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "password",
+        "password_repeat": "password"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "password",
+        "password_repeat": "password"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/admin/users\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "",
+        "password_repeat": "password"
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "password",
+        "password_repeat": "other_password"
+      },
+      "response_data": null,
+      "code": "200",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": null,
+      "request_data": {
+        "password": "password",
+        "password_repeat": "password"
+      },
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ],
+  "wizard#index": [
+    {
+      "verb": "GET",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": "password=password&password_repeat=password",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/en/wizard/apply",
+      "versions": [
+
+      ],
+      "query": "password=password&password_repeat=password",
+      "request_data": null,
+      "response_data": "<html><body>You are being <a href=\"http://test.host/en/login/login\">redirected</a>.</body></html>",
+      "code": "302",
+      "show_in_doc": 0,
+      "recorded": true
+    }
+  ]
+}

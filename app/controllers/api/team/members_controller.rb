@@ -7,16 +7,19 @@
 
 class Api::Team::MembersController < ApiController
 
+  api!
   def index
     members = team.teammembers.list
     render json: members
   end
 
+  api! 
   def candidates
     candidates = team.member_candidates
     render json: candidates
   end
 
+  api!
   def create
     new_member = User.find(params[:user_id])
 
@@ -27,6 +30,7 @@ class Api::Team::MembersController < ApiController
     render json: ''
   end
 
+  api!
   def destroy
     team.teammembers.find_by(user_id: params[:id]).destroy!
     render json: ''
