@@ -22,6 +22,7 @@ gem 'sass-rails'
 gem 'turbolinks'
 gem 'twitter-bootstrap-rails'
 gem 'uglifier'
+gem 'health_check'
 
 group :development, :test do
   gem 'minitest'

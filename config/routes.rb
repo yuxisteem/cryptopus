@@ -81,4 +81,5 @@ Cryptopus::Application.routes.draw do
       end
     end
   end
+  health_check_routes('health')
 end
