@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 # == Schema Information
 #
 # Table name: users
@@ -9,7 +8,7 @@
 #  private_key                  :binary           not null
 #  password                     :binary
 #  admin                        :boolean          default(FALSE), not null
-#  uid                          :integer
+#  ldap_uid                     :integer
 #  last_login_at                :datetime
 #  username                     :string
 #  givenname                    :string
@@ -62,7 +61,7 @@ class User < ApplicationRecord
     end
 
     def create_root(password)
-      user = new(uid: 0,
+      user = new(ldap_uid: 0,
                  username: 'root',
                  givenname: 'root',
                  surname: '',
@@ -74,7 +73,7 @@ class User < ApplicationRecord
     end
 
     def root
-      find_by(uid: 0)
+      find_by(ldap_uid: 0)
     end
   end
 
@@ -141,7 +140,7 @@ class User < ApplicationRecord
   end
 
   def root?
-    uid.zero?
+    ldap_uid.zero?
   end
 
   def auth_db?
