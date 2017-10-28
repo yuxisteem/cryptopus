@@ -41,7 +41,7 @@ class Admin::UsersControllerTest < ActionController::TestCase
 
     delete :destroy, params: { id: alice.id }
 
-    assert_not User.find_by(username: 'alice')
+    assert_not User::Human.find_by(username: 'alice')
   end
 
   test 'unlock user as admin' do

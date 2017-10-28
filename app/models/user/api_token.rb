@@ -29,16 +29,23 @@
 #  See the COPYING file at the top-level directory or at
 #  https://github.com/puzzle/cryptopus.
 
-class User < ApplicationRecord
+class User::ApiToken < User
 
-  def update_password(old, new)
-    return if ldap?
-    if authenticate_db(old)
-      self.password = CryptUtils.one_way_crypt(new)
-      pk = CryptUtils.decrypt_private_key(private_key, old)
-      self.private_key = CryptUtils.encrypt_private_key(pk, new)
-      save
-    end
+  belongs_to :human, class_name: 'User::Human', foreign_key: :human_user_id
+
+  serialize :options, User::ApiToken::Options
+
+  def expired?
   end
+
+  def reset_token
+    new_token = SecureRandom.hex(16)
+  end
+
+  private
+
+  def update_token(new)
+  end
+
 
 end

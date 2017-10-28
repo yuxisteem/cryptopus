@@ -7,16 +7,16 @@
 
 require 'test_helper'
 
-class UserTest < ActiveSupport::TestCase
+class User::HumanTest < ActiveSupport::TestCase
 
   test 'does not create user without name' do
-    user = User.new(username: '')
+    user = User::Human.new(username: '')
     assert_not user.valid?
     assert_equal [:username], user.errors.keys
   end
 
   test 'does not create second user bob' do
-    user = User.new(username: 'bob')
+    user = User::Human.new(username: 'bob')
     assert_not user.valid?
     assert_equal [:username], user.errors.keys
   end
@@ -74,7 +74,7 @@ class UserTest < ActiveSupport::TestCase
     LdapConnection.any_instance.expects(:ldap_info).with(42, 'givenname').returns("bob")
     LdapConnection.any_instance.expects(:ldap_info).with(42, 'sn').returns("test")
 
-    user = User.send(:create_from_ldap, 'bob', 'password')
+    user = User::Human.send(:create_from_ldap, 'bob', 'password')
 
     assert_equal 'bob', user.username
     assert_equal 42, user.uid
@@ -84,7 +84,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'returns user if exists in db' do
-    user = User.find_or_import_from_ldap('bob', 'password')
+    user = User::Human.find_or_import_from_ldap('bob', 'password')
     assert user
     assert_equal 'bob', user.username
   end
@@ -93,25 +93,25 @@ class UserTest < ActiveSupport::TestCase
     enable_ldap
 
     LdapConnection.any_instance.expects(:login).with('nobody', 'password').returns(false)
-    User.expects(:create_from_ldap).never
+    User::Human.expects(:create_from_ldap).never
 
-    user = User.find_or_import_from_ldap('nobody', 'password')
+    user = User::Human.find_or_import_from_ldap('nobody', 'password')
     assert_nil user
   end
 
   test 'does not return user if user not exists in db and ldap disabled' do
     LdapConnection.any_instance.expects(:login).never
 
-    user = User.find_or_import_from_ldap('nobody', 'password')
+    user = User::Human.find_or_import_from_ldap('nobody', 'password')
     assert_nil user
   end
 
   test 'imports and creates user from ldap' do
     enable_ldap
     LdapConnection.any_instance.expects(:login).with('nobody', 'password').returns(true)
-    User.expects(:create_from_ldap)
+    User::Human.expects(:create_from_ldap)
 
-    user = User.find_or_import_from_ldap('nobody', 'password')
+    user = User::Human.find_or_import_from_ldap('nobody', 'password')
 
     assert_nil user
   end
@@ -162,11 +162,11 @@ class UserTest < ActiveSupport::TestCase
 
   test 'do not destroy user if he is last teammember in any team' do
     soloteam = Fabricate(:private_team)
-    user = User.find(soloteam.teammembers.first.user_id)
+    user = User::Human.find(soloteam.teammembers.first.user_id)
     assert_raises(Exception) do
       user.destroy!
     end
-    assert User.find(user.id)
+    assert User::Human.find(user.id)
   end
 
   test 'new error on user if wrong old password at private_key recryption' do
