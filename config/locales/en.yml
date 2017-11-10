@@ -79,6 +79,7 @@ en:
       index:
         title: "Edit Settings"
         save: "Save changes"
+        ldap: "Test LDAP connection"
     recryptrequests:
       index:
         title: "Re-encryption requests"
@@ -196,6 +197,10 @@ en:
           toggle:
             empowered: "%{username} is now an admin"
             disempowered: "%{username} is no more admin"
+        settings:
+          test_ldap_connection:
+            successful: "Connection to Ldap Server successful"
+            failed: "Connection to Ldap Server failed"
       members:
         removed: "%{username} was successfully removed from team"
         added: "%{username} was successfully added to team"

@@ -79,6 +79,7 @@ de:
       index:
         title: "Einstellungen bearbeiten"
         save: "Änderungen speichern"
+        ldap: "Ldap Verbindung testen"
     recryptrequests:
       index:
         title: "Entschlüsselungs Anfragen"
@@ -196,6 +197,10 @@ de:
           toggle:
             empowered: "%{username} hat nun Admin-Rechte"
             disempowered: "Dem Benutzer %{username} wurden die Admin-Rechte entzogen"
+        settings:
+          test_ldap_connection:
+            successful: "Verbindung zum Ldap Server erfolgreich"
+            failed: "Verbindung zum Ldap Server fehlgeschlagen"
       members:
         added: "%{username} wurde erfolgreich hinzugefügt"
         removed: "%{username} wurde erfolgreich entfernt"

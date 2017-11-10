@@ -81,6 +81,7 @@ fr:
       index:
         title: "Modifier les paramètres"
         save: "Sauvegarder les modifications"
+        ldap: "Tester la connexion LDAP"
     recryptrequests:
       index:
         title: "Demandes de re crypt"
@@ -199,6 +200,10 @@ fr:
           toggle:
             empowerd: "L'usutilisateur a reçu les droits d administrateur"
             disempowerd: "L'utilisateur a perdu les droits d'administrateur"
+        settings:
+          test_ldap_connection:
+            successful: "Connexion au serveur Ldap réussie"
+            failed: "Connexion au serveur Ldap échoué"
     members:
       added: "%{username} a été enlevé avec succès à l'équipe"
       removed: "%{username} a été ajouté avec succès à l'équipe"
