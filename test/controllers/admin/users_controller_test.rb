@@ -23,6 +23,20 @@ class Admin::UsersControllerTest < ActionController::TestCase
     assert_match /You can't delete your-self/, flash[:error]
   end
 
+  test 'admin cannot delete another admin' do
+    bob = users(:bob)
+    alice = users(:alice)
+    bob.update_attribute(:admin, true)
+    alice.update_attribute(:admin, true)
+    login_as(:bob)
+
+    delete :destroy, params: { id: alice.id }
+
+    assert bob.reload.persisted?
+
+    assert_match /Admin cannot be deleted/, flash[:error]
+  end
+
   test 'bob cannot delete another user' do
     alice = users(:alice)
     login_as(:bob)

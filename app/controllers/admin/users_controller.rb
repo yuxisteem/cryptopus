@@ -40,14 +40,11 @@ class Admin::UsersController < Admin::AdminController
     if user == current_user
       flash[:error] = t('flashes.admin.users.destroy.own_user')
     else
+      flash[:error] = t('flashes.admin.users.destroy.admin') if user.admin
       user.destroy
     end
 
-    respond_to do |format|
-      format.html do
-        redirect_to admin_users_path
-      end
-    end
+    redirect_to_admin_users_path
   end
 
   # GET /admin/users/new
@@ -84,6 +81,14 @@ class Admin::UsersController < Admin::AdminController
 
 
   private
+
+  def redirect_to_admin_users_path
+    respond_to do |format|
+      format.html do
+        redirect_to admin_users_path
+      end
+    end
+  end
 
   def redirect_if_ldap_user
     return unless user.ldap?

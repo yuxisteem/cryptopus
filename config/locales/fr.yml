@@ -222,6 +222,7 @@ fr:
         destroy:
           own_user: "Actuel de l'utilisateur ne peut pas être supprimé"
           root: "Root ne peut pas être supprimé"
+          admin: "Admin ne peut pas être supprimé"
         update:
           root: "Root ne peuvent pas être mis à jour"
           ldap: "Ldap utilisateur ne peuvent pas être mis à jour"

@@ -219,6 +219,7 @@ de:
         destroy:
           own_user: "Eigener Benutzer kann nicht gelöscht werden"
           root: "Root kann nicht gelöscht werden"
+          admin: "Admin kann nicht gelöscht werden"
         update:
           root: "Root kann nicht aktualisiert werden"
           ldap: "Ldap User kann nicht aktualisiert werden"
